@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #222222;
+    --secondary-color: #FA8112;
+    --third-color: #F5E7C6;
+    --background-color: #FAF3E1;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    padding: 40px;
+    /* margin: 50px; */
+
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 720px;   /* ancho “tarjeta” en desktop */
+  margin: 0 auto;     /* centra el bloque */
+}
+
+.name {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.line {
+    background-color: #FA8112;
+    height: 6px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.cardbox {
+    background-color: var(--third-color);
+    border-radius: 10px;
+    /* max-width: 520px; */
+    margin: 20px auto;
+    width: 100%;
+    
+
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.qr {
+    width: 120px;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
