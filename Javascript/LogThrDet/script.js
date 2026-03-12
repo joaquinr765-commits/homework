@@ -11,6 +11,12 @@ const scanBtn = document.getElementById("scanBtn");
 const message = document.getElementById("message");
 
 scanBtn.addEventListener("click", function () {
+
+    if (failedAttemptsInput.value === "") {
+        message.textContent = "Please enter a number";
+        message.className = "message warn";
+        return;
+    }
     const failedAttempts = Number(failedAttemptsInput.value);
     // console.log(failedAttempts); TEST NUMBER IN CONSOLE
     const unusualLocation = unusualLocationSelect.value === "true";
@@ -19,18 +25,18 @@ scanBtn.addEventListener("click", function () {
     // console.log(recognizedDevice); TEST BOOLEAN IN CONSOLE
 
     if (failedAttempts >= 5) {
-    message.textContent = "ACCOUNT LOCKED";
-    message.className = "message danger";
-} else if (unusualLocation === true && recognizedDevice === false) {
-    message.textContent = "SUSPICIOUS";
-    message.className = "message warn";
-} else if (failedAttempts >= 3 && unusualLocation === true) {
-    message.textContent = "SUSPICIOUS";
-    message.className = "message warn";
-} else {
-    message.textContent = "LOGIN APPROVED";
-    message.className = "message safe";
-}
+        message.textContent = "ACCOUNT LOCKED";
+        message.className = "message danger";
+    } else if (unusualLocation === true && recognizedDevice === false) {
+        message.textContent = "SUSPICIOUS";
+        message.className = "message warn";
+    } else if (failedAttempts >= 3 && unusualLocation === true) {
+        message.textContent = "SUSPICIOUS";
+        message.className = "message warn";
+    } else {
+        message.textContent = "LOGIN APPROVED";
+        message.className = "message safe";
+    }
 });
 
 
