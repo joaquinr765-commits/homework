@@ -15,7 +15,7 @@ console.log("Add task to prior", tasks);
 
 let removedTask = tasks.pop();
 console.log("Removed Task:", removedTask);
-console.log(tasks); 
+console.log("After removing the last task", tasks); 
 
 tasks.forEach((task, index) => {
    console.log(`${index + 1}. ${task}`);
