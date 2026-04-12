@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Axios Homework – Country Info</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="homework.css" />
+</head>
+
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Country Info Viewer (Axios)</h1>
+            <p class="subtitle">Mention Axios and async/await</p>
+
+            <div class="field-row">
+                <label for="countryInput">Country Name</label>
+                <input id="countryInput" type="text" placeholder="Example country names">
+                <button id="searchCountryBtn" class="btn primary">Search Country</button>
+            </div>
+
+            <div class="info-block">
+                <h2 id="countryNameDisplay"></h2>
+                <p id="countryCapitalDisplay"></p>
+                <p id="countryRegionDisplay"></p>
+                <p id="countryPopulationDisplay"></p>
+
+                <p id="countryStatusMessage" class="status-message"></p>
+                <p class="hint">Use Axios + async/await to fetch country info and display it in the card.</p>
+            </div>
+        </section>
+    </main>
+    <script src="homework.js"></script>
+</body>
+
+</html>
